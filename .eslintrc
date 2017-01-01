@@ -1,0 +1,24 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint",
+    "plugin:react/recommended"
+  ],
+  "plugins": ["react"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "rules": {
+    "semi": ["error", "never"],
+    "quotes": ["error", "single", {"avoidEscape": true}],
+    "indent": [2, 2, {"SwitchCase": 1}],
+    "func-style": [2, "declaration", {"allowArrowFunctions": true}],
+    "require-jsdoc": ["off"],
+    "no-console": 1
+  }
+}
